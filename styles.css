@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("./assets/italian-bakery-28379528.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: #564004;
+  padding: 15px 0;
+  color: white;
+}
+
+.menu-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-list li a:hover,
+.menu-list li a.active {
+  background-color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(12, 12, 12, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-family: "Lucida Handwriting", cursive;
+  text-align: center;
+  animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+  0%,
+  100% {
+    color: #b37400;
+  }
+  50% {
+    color: #fd0808;
+  }
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #993706;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b37400;
+}
+
+a p {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+#signupMessage {
+  text-align: center;
+  margin-top: 10px;
+  color: red;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .menu-list li a {
+    display: block;
+    width: 100%;
+  }
+
+  .container {
+    margin: 20px;
+  }
+}

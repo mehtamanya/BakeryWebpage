@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | The Bakers Treat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu-bar">
+        <div class="logo">
+          <a href="home.html">The Bakers Treat</a>
+        </div>
+        <ul class="menu-list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Login</h1>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginUsername">Username:</label>
+          <input type="text" id="loginUsername" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" required />
+        </div>
+        <div class="form-group">
+          <button type="submit">Login</button>
+          <a href="index.html"><p>Don't have an account? Sign up here</p></a>
+        </div>
+      </form>
+
+      <p id="loginMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
